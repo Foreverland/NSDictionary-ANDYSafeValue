@@ -22,7 +22,7 @@
 
     XCTAssertNil([dictionary andy_valueForKey:@"last_name"]);
 
-    XCTAssertNil([dictionary andy_valueForKey:@"address"]);
+    XCTAssertNil([dictionary andy_valueForKey:@"age"]);
 }
 
 - (void)testSetValueForKey
