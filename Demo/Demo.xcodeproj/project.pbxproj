@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14956D751A06D848009E078A /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 14956D741A06D848009E078A /* .travis.yml */; };
 		149766731A06CACE00B0C63C /* NSDictionary+ANDYSafeValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 149766721A06CACE00B0C63C /* NSDictionary+ANDYSafeValue.m */; };
 		14C4182E1A01919C00636FD6 /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C4182D1A01919C00636FD6 /* Tests.m */; };
 		14C4183C1A019A1500636FD6 /* CONTRIBUTING.md in Sources */ = {isa = PBXBuildFile; fileRef = 14C418381A019A1500636FD6 /* CONTRIBUTING.md */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14956D741A06D848009E078A /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .travis.yml; path = ../.travis.yml; sourceTree = "<group>"; };
 		149766711A06CACE00B0C63C /* NSDictionary+ANDYSafeValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ANDYSafeValue.h"; sourceTree = "<group>"; };
 		149766721A06CACE00B0C63C /* NSDictionary+ANDYSafeValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ANDYSafeValue.m"; sourceTree = "<group>"; };
 		14C418261A01919C00636FD6 /* DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +88,7 @@
 		14C418401A019A1B00636FD6 /* Metadata */ = {
 			isa = PBXGroup;
 			children = (
+				14956D741A06D848009E078A /* .travis.yml */,
 				14C418381A019A1500636FD6 /* CONTRIBUTING.md */,
 				14C418391A019A1500636FD6 /* LICENSE.md */,
 				14C4183A1A019A1500636FD6 /* NSDictionary-ANDYSafeValue.podspec */,
@@ -150,6 +153,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14956D751A06D848009E078A /* .travis.yml in Resources */,
 				14C4183D1A019A1500636FD6 /* LICENSE.md in Resources */,
 				14C4183E1A019A1500636FD6 /* NSDictionary-ANDYSafeValue.podspec in Resources */,
 			);
