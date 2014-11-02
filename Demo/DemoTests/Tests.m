@@ -4,20 +4,41 @@
 
 @import XCTest;
 
+#import "NSDictionary+ANDYSafeValue.h"
+
 @interface Tests : XCTestCase
 
 @end
 
 @implementation Tests
 
-- (void)setUp
+- (void)testValueForKey
 {
-    [super setUp];
+    NSDictionary *dictionary = @{
+                                 @"id": @1,
+                                 @"first_name": @"Elvis",
+                                 @"last_name" : [NSNull null]
+                                 };
+
+    XCTAssertNil([dictionary andy_valueForKey:@"last_name"]);
+
+    XCTAssertNil([dictionary andy_valueForKey:@"address"]);
 }
 
-- (void)tearDown
+- (void)testSetValueForKey
 {
-    [super tearDown];
+    NSMutableDictionary *dictionary = @{
+                                        @"id": @1,
+                                        @"first_name": @"Elvis"
+                                        }.mutableCopy;
+
+    [dictionary andy_setValue:nil forKey:@"last_name"];
+
+    XCTAssertNil([dictionary valueForKey:@"last_name"]);
+
+    [dictionary andy_setValue:[NSNull null] forKey:@"last_name"];
+
+    XCTAssertNil([dictionary valueForKey:@"last_name"]);
 }
 
 @end

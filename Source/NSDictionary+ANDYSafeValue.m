@@ -11,27 +11,22 @@
 
 - (id)andy_valueForKey:(id)key
 {
-    if (!key) {
-        return nil;
-    }
+    if (!key) return nil;
+
     id value = [self valueForKeyPath:key];
 
-    if (value != [NSNull null] && [value isKindOfClass:[NSString class]]) {
-        NSString *someValue = value;
-        if (someValue.length == 0) {
-            return nil;
-        }
-    }
+    if (!value) return nil;
 
-    if (value == [NSNull null]) {
-        return nil;
-    }
+    if (value != [NSNull null] && [value isKindOfClass:[NSString class]] && [value length] == 0) return nil;
+
+    if (value == [NSNull null]) return nil;
+
     return value;
 }
 
 - (void)andy_setValue:(id)value forKey:(id)key
 {
-    if (value && key) [self setValue:value forKey:key];
+    if (value && key && value != [NSNull null]) [self setValue:value forKey:key];
 }
 
 @end
