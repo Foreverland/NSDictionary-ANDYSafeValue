@@ -1,12 +1,12 @@
 Pod::Spec.new do |s|
 s.name             = "NSDictionary-ANDYSafeValue"
-s.version          = "0.1.0"
-s.summary          = "A short description of NSDictionary-ANDYSafeValue."
+s.version          = "0.1"
+s.summary          = "A sweet bulletproof vest for your NSDictionary"
 s.description      = <<-DESC
-An optional longer description of NSDictionary-ANDYSafeValue
+A sweet bulletproof vest for your NSDictionary.
 
-* Markdown format.
-* Don't worry about the indent, we strip it!
+* Safe valueForKey getters
+* Safe setValueForKey checking
 DESC
 s.homepage         = "https://github.com/NSElvis/NSDictionary-ANDYSafeValue"
 s.license          = 'MIT'
@@ -19,6 +19,5 @@ s.requires_arc = true
 
 s.source_files = 'Source/**/*'
 
-# s.frameworks = 'UIKit', 'MapKit'
-# s.dependency 'AFNetworking', '~> 2.3'
+s.frameworks = 'Foundation'
 end
