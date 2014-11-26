@@ -41,4 +41,13 @@
     XCTAssertNil([dictionary valueForKey:@"last_name"]);
 }
 
+- (void)testValueForKeyWithNonExistingKey
+{
+    NSDictionary *dictionary = @{
+                                 @"id": @1
+                                 };
+
+    XCTAssertNil([dictionary andy_valueForKey:@"age.return"]);
+}
+
 @end
