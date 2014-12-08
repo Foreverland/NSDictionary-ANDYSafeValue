@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = "NSDictionary-ANDYSafeValue"
-s.version          = "0.2"
+s.version          = "0.3"
 s.summary          = "A sweet bulletproof vest for your NSDictionary"
 s.description      = <<-DESC
 A sweet bulletproof vest for your NSDictionary.

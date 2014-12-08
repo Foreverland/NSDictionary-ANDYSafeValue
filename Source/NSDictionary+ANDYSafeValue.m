@@ -6,7 +6,14 @@
 {
     if (!key) return nil;
 
-    id value = [self valueForKey:key];
+    id value = nil;
+
+    @try {
+        value = [self valueForKeyPath:key];
+    }
+    @catch (NSException *exception) {
+        if (exception) return nil;
+    }
 
     if (!value) return nil;
 
