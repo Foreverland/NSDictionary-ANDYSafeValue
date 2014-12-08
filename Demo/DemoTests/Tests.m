@@ -44,6 +44,8 @@
                                  };
 
     XCTAssertNil([dictionary andy_valueForKey:@"age.return"]);
+
+    XCTAssertNil([dictionary andy_valueForKey:@"id.return"]);
 }
 
 @end
