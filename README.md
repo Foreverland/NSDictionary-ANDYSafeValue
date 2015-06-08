@@ -10,6 +10,8 @@ Modify and retreieve values of an NSDictionary in the safest possible way :)
 ## Usage
 
 ```objc
+#import "NSDictionary+ANDYSafeValue.h"
+
 - (id)andy_valueForKey:(id)key;
 
 - (void)andy_setValue:(id)value forKey:(id)key;
